@@ -1,0 +1,7 @@
+tensorflow~=1.10.0
+numpy~=1.19.5
+Keras~=2.2.4
+opencv-python~=3.4.2.17
+requests~=2.19.0
+Pillow~=8.4.0
+matplotlib~=2.1.2
