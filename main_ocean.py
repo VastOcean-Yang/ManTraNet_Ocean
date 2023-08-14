@@ -90,7 +90,7 @@ def test_one_pair(original_path='original.png',forged_file='fake.png'):
 def dirs_test_and_save_mask(dirs_file_path):
     path_list = os.listdir(dirs_file_path)
     for path_1 in path_list:
-        mask_dir_path = os.path.join(dirs_file_path,path_1+'_mask')
+        mask_dir_path = os.path.join(dirs_file_path,path_1+'_mask_edit_by_ocean')
         os.makedirs(mask_dir_path)
         sub_path = os.path.join(dirs_file_path,path_1)
         img_name_list = os.listdir(sub_path)
@@ -122,14 +122,14 @@ print(IMCFeatex.summary(line_length=120))
 if __name__ == '__main__':
 
     #测试自定义的一组图片
-    original_path='original.png'
-    forged_file='fake.png'
-    test_one_pair(original_path,forged_file)
+    #original_path='original.png'
+    #forged_file='fake.png'
+    #test_one_pair(original_path,forged_file)
     #test_one_pair()
     #随机展示八组图片的效果
-    random_show()
+    #random_show()
     # fake = read_rgb_image('fake.png')
     # y1,y2=decode_an_image_array(fake,manTraNet)
     # print(y1)
 
-    dirs_test_and_save_mask('datasets_s')
+    dirs_test_and_save_mask('../datasets/casia')
